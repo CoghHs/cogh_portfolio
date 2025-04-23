@@ -104,7 +104,7 @@ export default function SkillsSection() {
 
           <div className="mb-12">
             <h4 className="text-white/60 mb-8 text-xl">프론트엔드 기술</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 backdrop-blur-lg">
               {frontendSkills.map((skill, index) => (
                 <SkillCard key={skill.name} skill={skill} delay={index * 0.1} />
               ))}
@@ -113,7 +113,7 @@ export default function SkillsSection() {
 
           <div>
             <h4 className="text-white/60 mb-8 text-xl">기타 기술</h4>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 backdrop-blur-lg">
               {otherSkills.map((skill, index) => (
                 <SkillCard key={skill.name} skill={skill} delay={index * 0.1} />
               ))}
@@ -129,7 +129,7 @@ export default function SkillsSection() {
         >
           <h3 className="text-3xl font-light mb-8 text-white">주요 역량</h3>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 backdrop-blur-lg">
             {coreSkills.map((skill, index) => (
               <SkillCard key={skill.name} skill={skill} delay={index * 0.1} />
             ))}

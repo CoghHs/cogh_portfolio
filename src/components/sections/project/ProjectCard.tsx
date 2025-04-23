@@ -12,7 +12,7 @@ export default function ProjectCard({
 }) {
   return (
     // 바깥 박스는 고정된 배경 + 라운드 처리
-    <div className="bg-black/80 rounded-3xl overflow-hidden p-4 pb-6">
+    <div className="bg-white/10 border-white/10 rounded-3xl overflow-hidden p-4 pb-6 ">
       {/* motion.div로 애니메이션 처리할 부분만 감쌈 */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}

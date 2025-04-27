@@ -1,7 +1,7 @@
 "use client";
 
 import { Project } from "@/types/project";
-import { AnimatePresence, easeIn } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
 import ProjectDetailSection from "./ProjectDetail";
 import ProjectGallery from "./ProjectGallery";
@@ -20,7 +20,6 @@ export default function ProjectDetailModal({
     <AnimatePresence>
       {isOpen && (
         <>
-          {/* 배경 레이어 - 별도로 애니메이션 처리 */}
           <motion.div
             className="fixed inset-0 bg-zinc-900 z-40 "
             initial={{ opacity: 0 }}
@@ -30,8 +29,6 @@ export default function ProjectDetailModal({
           >
             <ModalBgPhoto />
           </motion.div>
-
-          {/* 콘텐츠 레이어 - 투명도 애니메이션 없이 슬라이드만 적용 */}
           <motion.div
             className="fixed inset-0 flex z-50"
             initial={{ y: "100%" }}
